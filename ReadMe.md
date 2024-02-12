@@ -20,7 +20,7 @@ smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 ### 3: We’ll create a file to store our credentials. Before that, create an app password in your gmail.
    sudo nano /etc/postfix/sasl/sasl_passwd
 ```bash
-	add line [smtp.gmail.com]:587	yourgmail:app_password
+add line [smtp.gmail.com]:587	yourgmail:app_password
 ```
 
 ### 4: We’ll give this file permission in such a way that root can only read by root
