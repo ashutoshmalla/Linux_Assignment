@@ -85,6 +85,7 @@ source ~/.bashrc
 ### 1: This command will do the task
 ``` bash
 find / -name "research.gz" -exec gunzip {} \;
+or, gunzip -k $(find /home -type f -name "*.gz" -print -quit 2>/dev/null)
 ``` 
 # 5. Configure your system in such a way that any user of your system creates a file then there should not be permission to do any activity in that file.
 Note:- Don’t use the chmod command.
